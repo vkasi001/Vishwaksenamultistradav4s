@@ -11,8 +11,19 @@ import edu.fiu.jit.SelfCheckUtils;
  *
  */
 public class Server implements SelfCheckCapable
+
 {
 
+	private String antena;
+	private String manufacturer;
+	private String memory;
+	
+	public void givesaccess() {
+		// Gives security permission
+	}
+	public void managessystem() {
+		// Manages all the systems and updates
+	}
 	@Override
 	public String getComponentName() {
 		// TODO Auto-generated method stub
