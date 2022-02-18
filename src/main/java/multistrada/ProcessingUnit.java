@@ -9,21 +9,25 @@ import edu.fiu.jit.SelfCheckCapable;
  * @author 13025
  *
  */
-public class radarsensorone implements SelfCheckCapable
+public class ProcessingUnit implements SelfCheckCapable
 {
-
-	private String sizeofantenna;
-	private String manufacturer;
-	private String model;
+	private String controlunit;
+	private String arthematiclogicUnit;
+	private String registers;
 	
-	private void fireradarbeam() {
-		// It emits radar beam
+	private void controlsACC()
+	{
+		//Controls Few functions of ACC
+	}
+
+	private void storesdata() {
+		//Stores the data 
 	}
 
 	@Override
 	public String getComponentName() {
 		// TODO Auto-generated method stub
-		return "sensor";
+		return "processingunit";
 	}
 
 	@Override
@@ -31,4 +35,6 @@ public class radarsensorone implements SelfCheckCapable
 		// TODO Auto-generated method stub
 		return true;
 	}
-}
+	
+	}
+

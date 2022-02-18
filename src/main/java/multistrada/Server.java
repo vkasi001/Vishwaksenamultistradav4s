@@ -4,31 +4,25 @@
 package multistrada;
 
 import edu.fiu.jit.SelfCheckCapable;
+import edu.fiu.jit.SelfCheckUtils;
 
 /**
  * @author 13025
  *
  */
-public class radarsensorone implements SelfCheckCapable
+public class Server implements SelfCheckCapable
 {
-
-	private String sizeofantenna;
-	private String manufacturer;
-	private String model;
-	
-	private void fireradarbeam() {
-		// It emits radar beam
-	}
 
 	@Override
 	public String getComponentName() {
 		// TODO Auto-generated method stub
-		return "sensor";
+		return "server";
 	}
 
 	@Override
 	public boolean selfCheck() {
 		// TODO Auto-generated method stub
-		return true;
+		return SelfCheckUtils.randomCheck(0.3);
 	}
+
 }
